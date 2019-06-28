@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */; };
 		5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */; };
+		5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */; };
+		5D858FCB22C60D0B00346833 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858FCA22C60D0B00346833 /* CustomTabBar.swift */; };
 		5DCFC34922C108A6005CE98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCFC34822C108A6005CE98D /* AppDelegate.swift */; };
 		5DCFC34B22C108A6005CE98D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCFC34A22C108A6005CE98D /* ViewController.swift */; };
 		5DCFC34E22C108A6005CE98D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCFC34C22C108A6005CE98D /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomDemoViewController.swift; sourceTree = "<group>"; };
+		5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		5D858FCA22C60D0B00346833 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		5DCFC34522C108A6005CE98D /* Hahn_Tabbar_Swfir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hahn_Tabbar_Swfir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCFC34822C108A6005CE98D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCFC34A22C108A6005CE98D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D858FC722C60C1A00346833 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */,
+				5D858FCA22C60D0B00346833 /* CustomTabBar.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		5DCFC33C22C108A6005CE98D = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 				5DCFC37722C1094F005CE98D /* DemoVC */,
 				5DCFC37622C10942005CE98D /* TabBar */,
 				5DCFC37822C10959005CE98D /* SimpleCustomTabBar */,
+				5D858FC722C60C1A00346833 /* CustomTabBar */,
 				5DCFC34822C108A6005CE98D /* AppDelegate.swift */,
 				5DCFC34A22C108A6005CE98D /* ViewController.swift */,
 				5DCFC34C22C108A6005CE98D /* Main.storyboard */,
@@ -306,7 +320,9 @@
 			files = (
 				5DCFC38422C10E4C005CE98D /* TabBarViewController.swift in Sources */,
 				5DCFC37A22C1098A005CE98D /* Demo1ViewController.swift in Sources */,
+				5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */,
 				5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */,
+				5D858FCB22C60D0B00346833 /* CustomTabBar.swift in Sources */,
 				5DCFC34B22C108A6005CE98D /* ViewController.swift in Sources */,
 				5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */,
 				5DCFC38222C10E1C005CE98D /* Demo5ViewController.swift in Sources */,
