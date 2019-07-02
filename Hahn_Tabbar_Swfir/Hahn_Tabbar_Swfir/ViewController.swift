@@ -18,7 +18,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
      swift懒加载只会在首次使用的时候创建一次，之后再次使用或者新赋值都不会去重新创建了，而是就保存新设置的值
      */
     lazy var dataArray1:[String] = {
-        let arr = ["系统TabBar", "简单加号按钮的tabbar", "凸起来的加号按钮tabbar"]
+        let arr = ["系统TabBar", "简单加号按钮的tabbar", "凸起来的加号按钮tabbar", "淘宝按钮tabbar"]
         return arr
     }()
     
@@ -59,6 +59,11 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         // 凸起来的加号按钮tabbar
         else if indexPath.row == 2{
             let tabBar = CustomTabBarViewController()
+            self.present(tabBar, animated: true, completion: nil)
+        }
+        // 淘宝按钮tabbar
+        else if indexPath.row == 3{
+            let tabBar = TaoBaoCustomTabBarViewController()
             self.present(tabBar, animated: true, completion: nil)
         }
     }

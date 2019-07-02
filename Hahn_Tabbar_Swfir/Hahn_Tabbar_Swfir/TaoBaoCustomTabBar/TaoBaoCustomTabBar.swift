@@ -9,42 +9,32 @@
 import UIKit
 
 // 声明一个协议clcikDelegate，需要继承NSObjectProtocol
-protocol CustomTabBarDelegate: NSObjectProtocol {
-    func tabBarDidClickPlusButton()
+protocol TaoBaoCustomTabBarDelegate: NSObjectProtocol {
+    func tabBarDidClickPlusButton(tabBar:TaoBaoCustomTabBar)
 }
 
-class CustomTabBar: UITabBar {
+class TaoBaoCustomTabBar: UITabBar {
     // 声明代理
-    weak var myDelegate: CustomTabBarDelegate?
+    weak var myDelegate: TaoBaoCustomTabBarDelegate?
     
     // 懒加载中间的按钮
     lazy var plusButton: UIButton = {
         let plusButton = UIButton()
-        plusButton.setImage(UIImage.init(named: "post_normal"), for: .normal)
-        plusButton.setImage(UIImage.init(named: "post_normal"), for: .highlighted)
+        plusButton.setImage(UIImage.init(named: "taobao"), for: .normal)
+        plusButton.setImage(UIImage.init(named: "taobao"), for: .highlighted)
         plusButton.titleLabel?.font = UIFont.systemFont(ofSize: 11)
-        plusButton.setTitle("发布", for: .normal)
-        plusButton.setTitleColor(UIColor.gray, for: .normal)
-//        plusButton.setTitleColor(UIColor.init(red: 255.0/255, green: 204.0/255, blue: 13.0/255, alpha: 1), for: .selected)
-        
-        let buttonImg: UIImage? = plusButton.image(for: .normal)
-        // 暂时没有找到计算字符串长度的方法
-//        var titleWidth: CGFloat? = NSString(string: plusButton.titleLabel?.text).size(attributes: [NSFontAttributeName:UIFont.systemFont(ofSize: 18)]).width
-        let titleWidth = self
-        plusButton.titleEdgeInsets = UIEdgeInsets.init(top: buttonImg!.size.height, left: -buttonImg!.size.height, bottom: -15, right: 0)
-        plusButton.imageEdgeInsets = UIEdgeInsets.init(top: -15, left: 0, bottom: 0, right: -20)
+        plusButton.setTitle("", for: .normal)
 
-        
         plusButton.frame = CGRect.init(x: 0, y: 0, width: plusButton.imageView!.image!.size.width, height: plusButton.imageView!.image!.size.height + 40)
-        plusButton.addTarget(self, action: #selector(CustomTabBar.respondsToPlusButton), for: .touchUpInside)
+        plusButton.addTarget(self, action: #selector(TaoBaoCustomTabBar.respondsToPlusButton), for: .touchUpInside)
         return plusButton
     }()
 
-    // MARK: - CustomTabBarDelegate
+    // MARK: - TaoBaoCustomTabBarDelegate
     @objc func respondsToPlusButton(){
         //和oc不一样的是，Swift中如果简单的调用代理方法, 不用判断代理能否响应
         if myDelegate != nil{
-            myDelegate?.tabBarDidClickPlusButton()
+            myDelegate?.tabBarDidClickPlusButton(tabBar: self)
         }
     }
  
@@ -63,33 +53,26 @@ class CustomTabBar: UITabBar {
     // MARK: - 重新布局
     override func layoutSubviews() {
         super.layoutSubviews()
-        // 设置中间的按钮的位置
-        let x = self.frame.width * 0.5
-        let y = self.frame.height * 0.1
-        self.plusButton.center = CGPoint.init(x: x, y: y)
         
+        // 设置淘宝按钮的位置
         let w = self.frame.width / 5
-        var index = 0
+        let index = 0
         for childView:UIView in self.subviews {
             if childView.isKind(of: NSClassFromString("UITabBarButton")!){
-                
-                var isIphoneX:Bool = false
-                let zeroNum:CGFloat = 0
-                // 判断是否是刘海屏
-                if #available(iOS 11.0, *) {
-                    isIphoneX = UIApplication.shared.keyWindow!.safeAreaInsets.bottom > zeroNum
-                }
-                
-                if isIphoneX {
-                    childView.frame = CGRect.init(x: w * CGFloat(index), y: 0, width: w, height: self.frame.size.height - 34)
-                }else{
-                    childView.frame = CGRect.init(x: w * CGFloat(index), y: 0, width: w, height: self.frame.size.height )
-                }
-                
 
-                index+=1
-                if index == 2{
-                    index+=1
+                if index == 0 {
+                    var isIphoneX:Bool = false
+                    let zeroNum:CGFloat = 0
+                    // 判断是否是刘海屏
+                    if #available(iOS 11.0, *) {
+                        isIphoneX = UIApplication.shared.keyWindow!.safeAreaInsets.bottom > zeroNum
+                    }
+                    
+                    if isIphoneX {
+                        self.plusButton.frame = CGRect.init(x: w * CGFloat(index), y: 0, width: w, height: self.frame.size.height - 34)
+                    }else{
+                        self.plusButton.frame = CGRect.init(x: w * CGFloat(index), y: 0, width: w, height: self.frame.size.height )
+                    }
                 }
 
             }
