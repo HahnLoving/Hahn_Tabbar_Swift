@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D18CE6822CB2B5B004A10AF /* TaoBaoCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CE6622CB2B5B004A10AF /* TaoBaoCustomTabBarViewController.swift */; };
 		5D18CE6922CB2B5B004A10AF /* TaoBaoCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CE6722CB2B5B004A10AF /* TaoBaoCustomTabBar.swift */; };
+		5D18CE7222CC846B004A10AF /* AnimationTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CE7122CC846B004A10AF /* AnimationTabBarViewController.swift */; };
+		5D18CE7422CC8B1A004A10AF /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D18CE7322CC8B1A004A10AF /* music.wav */; };
 		5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */; };
 		5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */; };
 		5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		5D18CE6622CB2B5B004A10AF /* TaoBaoCustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaoBaoCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		5D18CE6722CB2B5B004A10AF /* TaoBaoCustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaoBaoCustomTabBar.swift; sourceTree = "<group>"; };
+		5D18CE7122CC846B004A10AF /* AnimationTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTabBarViewController.swift; sourceTree = "<group>"; };
+		5D18CE7322CC8B1A004A10AF /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music.wav; sourceTree = "<group>"; };
 		5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomDemoViewController.swift; sourceTree = "<group>"; };
 		5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 			path = TaoBaoCustomTabBar;
 			sourceTree = "<group>";
 		};
+		5D18CE7022CC8446004A10AF /* AnimationTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D18CE7122CC846B004A10AF /* AnimationTabBarViewController.swift */,
+			);
+			path = AnimationTabBar;
+			sourceTree = "<group>";
+		};
 		5D858FC722C60C1A00346833 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,9 +156,11 @@
 				5DCFC37822C10959005CE98D /* SimpleCustomTabBar */,
 				5D858FC722C60C1A00346833 /* CustomTabBar */,
 				5D18CE6522CB2B5B004A10AF /* TaoBaoCustomTabBar */,
+				5D18CE7022CC8446004A10AF /* AnimationTabBar */,
 				5DCFC34822C108A6005CE98D /* AppDelegate.swift */,
 				5DCFC34A22C108A6005CE98D /* ViewController.swift */,
 				5DCFC34C22C108A6005CE98D /* Main.storyboard */,
+				5D18CE7322CC8B1A004A10AF /* music.wav */,
 				5DCFC34F22C108A7005CE98D /* Assets.xcassets */,
 				5DCFC35122C108A7005CE98D /* LaunchScreen.storyboard */,
 				5DCFC35422C108A7005CE98D /* Info.plist */,
@@ -307,6 +321,7 @@
 			files = (
 				5DCFC35322C108A7005CE98D /* LaunchScreen.storyboard in Resources */,
 				5DCFC35022C108A7005CE98D /* Assets.xcassets in Resources */,
+				5D18CE7422CC8B1A004A10AF /* music.wav in Resources */,
 				5DCFC34E22C108A6005CE98D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +351,7 @@
 				5DCFC37A22C1098A005CE98D /* Demo1ViewController.swift in Sources */,
 				5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */,
 				5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */,
+				5D18CE7222CC846B004A10AF /* AnimationTabBarViewController.swift in Sources */,
 				5D858FCB22C60D0B00346833 /* CustomTabBar.swift in Sources */,
 				5DCFC34B22C108A6005CE98D /* ViewController.swift in Sources */,
 				5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */,

@@ -35,6 +35,7 @@ class TabBarViewController: UITabBarController {
         creatTabbarView(viewController: demo5VC, image: "account_normal", selectImage: "account_highlight", title: "我的")
         
         self.tabBar.tintColor = UIColor(red: 255/255.0, green: 204/255.0, blue: 13/255.0, alpha: 1)
+        self.tabBar.isTranslucent = false
         
         self.viewControllers = [
             UINavigationController(rootViewController: demo1VC),
@@ -43,6 +44,7 @@ class TabBarViewController: UITabBarController {
             UINavigationController(rootViewController: demo4VC),
             UINavigationController(rootViewController: demo5VC),
         ];
+        
     }
     
     // MARK: - TabBar里面的文字图片
@@ -52,4 +54,5 @@ class TabBarViewController: UITabBarController {
         viewController.tabBarItem.selectedImage = UIImage(named: selectImage as String)?.withRenderingMode(.alwaysOriginal)
         viewController.title = title as String
     }
+    
 }
