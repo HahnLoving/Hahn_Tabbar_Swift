@@ -11,6 +11,10 @@
 		5D18CE6922CB2B5B004A10AF /* TaoBaoCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CE6722CB2B5B004A10AF /* TaoBaoCustomTabBar.swift */; };
 		5D18CE7222CC846B004A10AF /* AnimationTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CE7122CC846B004A10AF /* AnimationTabBarViewController.swift */; };
 		5D18CE7422CC8B1A004A10AF /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D18CE7322CC8B1A004A10AF /* music.wav */; };
+		5D18CEC922CFD088004A10AF /* JDAnimationTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CEC822CFD088004A10AF /* JDAnimationTabBarViewController.swift */; };
+		5D18CECB22CFD113004A10AF /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CECA22CFD113004A10AF /* SuperViewController.swift */; };
+		5D18CECD22CFD36D004A10AF /* Demo6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CECC22CFD36D004A10AF /* Demo6ViewController.swift */; };
+		5D18CECF22CFD37A004A10AF /* Demo7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */; };
 		5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */; };
 		5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */; };
 		5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */; };
@@ -52,6 +56,10 @@
 		5D18CE6722CB2B5B004A10AF /* TaoBaoCustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaoBaoCustomTabBar.swift; sourceTree = "<group>"; };
 		5D18CE7122CC846B004A10AF /* AnimationTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTabBarViewController.swift; sourceTree = "<group>"; };
 		5D18CE7322CC8B1A004A10AF /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music.wav; sourceTree = "<group>"; };
+		5D18CEC822CFD088004A10AF /* JDAnimationTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDAnimationTabBarViewController.swift; sourceTree = "<group>"; };
+		5D18CECA22CFD113004A10AF /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		5D18CECC22CFD36D004A10AF /* Demo6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo6ViewController.swift; sourceTree = "<group>"; };
+		5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo7ViewController.swift; sourceTree = "<group>"; };
 		5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomDemoViewController.swift; sourceTree = "<group>"; };
 		5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +127,14 @@
 			path = AnimationTabBar;
 			sourceTree = "<group>";
 		};
+		5D18CEC722CFD05B004A10AF /* JDAnimationTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D18CEC822CFD088004A10AF /* JDAnimationTabBarViewController.swift */,
+			);
+			path = JDAnimationTabBar;
+			sourceTree = "<group>";
+		};
 		5D858FC722C60C1A00346833 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +173,7 @@
 				5D858FC722C60C1A00346833 /* CustomTabBar */,
 				5D18CE6522CB2B5B004A10AF /* TaoBaoCustomTabBar */,
 				5D18CE7022CC8446004A10AF /* AnimationTabBar */,
+				5D18CEC722CFD05B004A10AF /* JDAnimationTabBar */,
 				5DCFC34822C108A6005CE98D /* AppDelegate.swift */,
 				5DCFC34A22C108A6005CE98D /* ViewController.swift */,
 				5DCFC34C22C108A6005CE98D /* Main.storyboard */,
@@ -202,6 +219,9 @@
 				5DCFC37D22C10CB8005CE98D /* Demo3ViewController.swift */,
 				5DCFC37F22C10DF7005CE98D /* Demo4ViewController.swift */,
 				5DCFC38122C10E1C005CE98D /* Demo5ViewController.swift */,
+				5D18CECA22CFD113004A10AF /* SuperViewController.swift */,
+				5D18CECC22CFD36D004A10AF /* Demo6ViewController.swift */,
+				5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -349,14 +369,18 @@
 			files = (
 				5DCFC38422C10E4C005CE98D /* TabBarViewController.swift in Sources */,
 				5DCFC37A22C1098A005CE98D /* Demo1ViewController.swift in Sources */,
+				5D18CECF22CFD37A004A10AF /* Demo7ViewController.swift in Sources */,
 				5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */,
 				5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */,
 				5D18CE7222CC846B004A10AF /* AnimationTabBarViewController.swift in Sources */,
 				5D858FCB22C60D0B00346833 /* CustomTabBar.swift in Sources */,
+				5D18CECD22CFD36D004A10AF /* Demo6ViewController.swift in Sources */,
 				5DCFC34B22C108A6005CE98D /* ViewController.swift in Sources */,
 				5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */,
 				5DCFC38222C10E1C005CE98D /* Demo5ViewController.swift in Sources */,
+				5D18CEC922CFD088004A10AF /* JDAnimationTabBarViewController.swift in Sources */,
 				5DCFC38022C10DF7005CE98D /* Demo4ViewController.swift in Sources */,
+				5D18CECB22CFD113004A10AF /* SuperViewController.swift in Sources */,
 				5DCFC37C22C109CF005CE98D /* Demo2ViewController.swift in Sources */,
 				5D18CE6922CB2B5B004A10AF /* TaoBaoCustomTabBar.swift in Sources */,
 				5DCFC37E22C10CB8005CE98D /* Demo3ViewController.swift in Sources */,
