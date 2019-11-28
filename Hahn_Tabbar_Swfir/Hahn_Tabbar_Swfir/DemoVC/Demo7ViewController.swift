@@ -36,6 +36,7 @@ class Demo7ViewController: SuperViewController {
     @objc func pushBtnCkick(){
         let demo6VC = Demo6ViewController()
         demo6VC.hidesBottomBarWhenPushed = true
+        demo6VC.str = "大番薯"
         self.navigationController?.pushViewController(demo6VC, animated: true)
     }
 

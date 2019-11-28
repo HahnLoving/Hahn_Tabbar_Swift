@@ -10,6 +10,8 @@ import UIKit
 
 class Demo6ViewController: UIViewController {
     
+    var str:String!
+    
     // MARK: - 类似OC dealloc
     deinit {
         self.removeObserver(self, forKeyPath: "isAnimation", context: nil)
@@ -20,6 +22,8 @@ class Demo6ViewController: UIViewController {
         self.view.backgroundColor = UIColor.yellow
         // 设置KVO、观察者
         self.addObserver(self, forKeyPath: "isAnimation", options: .new, context: nil)
+        let str1 = "\(self.str as! String)"
+        print(str1)
     }
     
     override func viewWillAppear(_ animated: Bool) {

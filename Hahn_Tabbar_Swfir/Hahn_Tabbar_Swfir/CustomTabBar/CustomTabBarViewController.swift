@@ -22,6 +22,13 @@ class CustomTabBarViewController: UITabBarController, UITabBarControllerDelegate
         self.customTabBar1 = customTabBar
         self.setValue(customTabBar, forKey: "tabBar")
         
+        self.customTabBar1.datePickBlock = {str in
+            print(str)
+        }
+        self.customTabBar1.dictDataBlock = { dict in
+            print(dict)
+        }
+        
         self.setUpTabBar()
     }
     

@@ -13,9 +13,16 @@ protocol CustomTabBarDelegate: NSObjectProtocol {
     func tabBarDidClickPlusButton()
 }
 
+// 定义一个闭包类型(block)
+typealias dateBlock = (String)->()
+typealias dictBlock = (NSMutableDictionary)->()
+
 class CustomTabBar: UITabBar {
     // 声明代理
     weak var myDelegate: CustomTabBarDelegate?
+    // 声明一个block变量
+    var datePickBlock: dateBlock?
+    var dictDataBlock: dictBlock?
     
     // 懒加载中间的按钮
     lazy var plusButton: UIButton = {
@@ -63,6 +70,19 @@ class CustomTabBar: UITabBar {
     // MARK: - 重新布局
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        // block 传递
+        var dict:NSMutableDictionary!
+        dict = [
+            "name":"hzl"
+        ]
+        if self.datePickBlock != nil {
+            self.datePickBlock!("参数")
+        }
+        if self.dictDataBlock != nil {
+            self.dictDataBlock!(dict)
+        }
+        
         // 设置中间的按钮的位置
         let x = self.frame.width * 0.5
         let y = self.frame.height * 0.1

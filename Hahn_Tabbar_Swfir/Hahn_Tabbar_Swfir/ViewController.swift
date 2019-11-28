@@ -49,32 +49,50 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         // 系统TabBar
         if indexPath.row == 0 {
             let tabBar = TabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
             self.present(tabBar, animated: true, completion: nil)
         }
         // 简单加号按钮的tabbar
         else if indexPath.row == 1{
             let tabBar = SimpleCustomTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
             self.present(tabBar, animated: true, completion: nil)
         }
         // 凸起来的加号按钮tabbar
         else if indexPath.row == 2{
             let tabBar = CustomTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
             self.present(tabBar, animated: true, completion: nil)
         }
         // 淘宝按钮tabbar
         else if indexPath.row == 3{
             let tabBar = TaoBaoCustomTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
             self.present(tabBar, animated: true, completion: nil)
         }
         // 动画按钮tabbar
         else if indexPath.row == 4{
             let tabBar = AnimationTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
             self.present(tabBar, animated: true, completion: nil)
         }
         // 京东起弹Tabbar
         else if indexPath.row == 5{
-            let tabbar = JDAnimationTabBarViewController()
-            self.present(tabbar, animated: true, completion: nil)
+            let tabBar = JDAnimationTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
+            self.present(tabBar, animated: true, completion: nil)
         }
     }
 }
