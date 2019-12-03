@@ -10,13 +10,15 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    public var isBadge:Bool! = false                                // true是自定义小红点 false是常规的 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpTabBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setUpTabBar()
     }
     
     // MARK: - 控制器的信息
@@ -27,8 +29,13 @@ class TabBarViewController: UITabBarController {
         let demo3VC  = Demo3ViewController()
         let demo4VC  = Demo4ViewController()
         let demo5VC  = Demo5ViewController()
+        let demo6VC  = BadgeViewController()
         
-        creatTabbarView(viewController: demo1VC, image: "home_normal", selectImage: "home_highlight", title: "首页")
+        if isBadge {
+            creatTabbarView(viewController: demo6VC, image: "home_normal", selectImage: "home_highlight", title: "首页")
+        }else{
+            creatTabbarView(viewController: demo1VC, image: "home_normal", selectImage: "home_highlight", title: "首页")
+        }
         creatTabbarView(viewController: demo2VC, image: "mycity_normal", selectImage: "mycity_highlight", title: "附近")
         creatTabbarView(viewController: demo3VC, image: "mycity_normal", selectImage: "mycity_normal", title: "发布")
         creatTabbarView(viewController: demo4VC, image: "message_normal", selectImage: "message_highlight", title: "聊天")
@@ -37,13 +44,24 @@ class TabBarViewController: UITabBarController {
         self.tabBar.tintColor = UIColor(red: 255/255.0, green: 204/255.0, blue: 13/255.0, alpha: 1)
         self.tabBar.isTranslucent = false
         
-        self.viewControllers = [
-            UINavigationController(rootViewController: demo1VC),
-            UINavigationController(rootViewController: demo2VC),
-            UINavigationController(rootViewController: demo3VC),
-            UINavigationController(rootViewController: demo4VC),
-            UINavigationController(rootViewController: demo5VC),
-        ];
+        if isBadge {
+            self.viewControllers = [
+                UINavigationController(rootViewController: demo6VC),
+                UINavigationController(rootViewController: demo2VC),
+                UINavigationController(rootViewController: demo3VC),
+                UINavigationController(rootViewController: demo4VC),
+                UINavigationController(rootViewController: demo5VC),
+            ];
+        }else{
+            self.viewControllers = [
+                UINavigationController(rootViewController: demo1VC),
+                UINavigationController(rootViewController: demo2VC),
+                UINavigationController(rootViewController: demo3VC),
+                UINavigationController(rootViewController: demo4VC),
+                UINavigationController(rootViewController: demo5VC),
+            ];
+        }
+        
         
     }
     

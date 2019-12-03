@@ -18,7 +18,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
      swift懒加载只会在首次使用的时候创建一次，之后再次使用或者新赋值都不会去重新创建了，而是就保存新设置的值
      */
     lazy var dataArray1:[String] = {
-        let arr = ["系统TabBar", "简单加号按钮的tabbar", "凸起来的加号按钮tabbar", "淘宝按钮tabbar", "动画音效按钮tabbar", "京东起弹Tabbar"]
+        let arr = ["系统TabBar", "简单加号按钮的tabbar", "凸起来的加号按钮tabbar", "淘宝按钮tabbar", "动画音效按钮tabbar", "京东起弹Tabbar", "自定义小红点Tabbar"]
         return arr
     }()
     
@@ -49,6 +49,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         // 系统TabBar
         if indexPath.row == 0 {
             let tabBar = TabBarViewController()
+            tabBar.isBadge = false
             if #available(iOS 13, *) {
                 tabBar.modalPresentationStyle = .fullScreen
             }
@@ -89,6 +90,15 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         // 京东起弹Tabbar
         else if indexPath.row == 5{
             let tabBar = JDAnimationTabBarViewController()
+            if #available(iOS 13, *) {
+                tabBar.modalPresentationStyle = .fullScreen
+            }
+            self.present(tabBar, animated: true, completion: nil)
+        }
+        // 自定义小红点Tabbar
+        else if indexPath.row == 6{
+            let tabBar = TabBarViewController()
+            tabBar.isBadge = true
             if #available(iOS 13, *) {
                 tabBar.modalPresentationStyle = .fullScreen
             }

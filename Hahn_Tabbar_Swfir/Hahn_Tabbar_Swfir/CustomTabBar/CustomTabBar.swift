@@ -88,7 +88,8 @@ class CustomTabBar: UITabBar {
         let y = self.frame.height * 0.1
         self.plusButton.center = CGPoint.init(x: x, y: y)
         
-        let w = self.frame.width / 5
+//        let w = self.frame.width / 5
+        let w = self.frame.width / 3
         var index = 0
         for childView:UIView in self.subviews {
             if childView.isKind(of: NSClassFromString("UITabBarButton")!){
@@ -108,7 +109,11 @@ class CustomTabBar: UITabBar {
                 
 
                 index+=1
-                if index == 2{
+//                if index == 2{
+//                    index+=1
+//                }
+                
+                if index == 1{
                     index+=1
                 }
 

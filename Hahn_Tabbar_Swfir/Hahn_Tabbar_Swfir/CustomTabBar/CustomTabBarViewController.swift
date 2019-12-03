@@ -41,13 +41,13 @@ class CustomTabBarViewController: UITabBarController, UITabBarControllerDelegate
         
         let demo1VC  = Demo1ViewController()
         let demo2VC  = Demo2ViewController()
-        let demo4VC  = Demo4ViewController()
-        let demo5VC  = Demo5ViewController()
+//        let demo4VC  = Demo4ViewController()
+//        let demo5VC  = Demo5ViewController()
         
         creatTabbarView(viewController: demo1VC, image: "home_normal", selectImage: "home_highlight", title: "首页", tag: 1)
         creatTabbarView(viewController: demo2VC, image: "mycity_normal", selectImage: "mycity_highlight", title: "附近", tag: 2)
-        creatTabbarView(viewController: demo4VC, image: "message_normal", selectImage: "message_highlight", title: "聊天", tag: 3)
-        creatTabbarView(viewController: demo5VC, image: "account_normal", selectImage: "account_highlight", title: "我的", tag: 4)
+//        creatTabbarView(viewController: demo4VC, image: "message_normal", selectImage: "message_highlight", title: "聊天", tag: 3)
+//        creatTabbarView(viewController: demo5VC, image: "account_normal", selectImage: "account_highlight", title: "我的", tag: 4)
         
         self.tabBar.tintColor = UIColor(red: 255/255.0, green: 204/255.0, blue: 13/255.0, alpha: 1)
         self.tabBar.isTranslucent = false
@@ -55,8 +55,8 @@ class CustomTabBarViewController: UITabBarController, UITabBarControllerDelegate
         self.viewControllers = [
             UINavigationController(rootViewController: demo1VC),
             UINavigationController(rootViewController: demo2VC),
-            UINavigationController(rootViewController: demo4VC),
-            UINavigationController(rootViewController: demo5VC),
+//            UINavigationController(rootViewController: demo4VC),
+//            UINavigationController(rootViewController: demo5VC),
         ];
         
         self.delegate = self
