@@ -17,6 +17,8 @@
 		5D18CECF22CFD37A004A10AF /* Demo7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */; };
 		5D534C652394F009007784A8 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D534C642394F009007784A8 /* BadgeViewController.swift */; };
 		5D534C6A2394F27C007784A8 /* UITabBar+HahnBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D534C692394F27C007784A8 /* UITabBar+HahnBadge.swift */; };
+		5D6C791A23A33A3100FB5865 /* SlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C791923A33A3100FB5865 /* SlidingViewController.swift */; };
+		5D6C791E23A33B8C00FB5865 /* Demo8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C791D23A33B8C00FB5865 /* Demo8ViewController.swift */; };
 		5D858ECE22C473F400346833 /* SimpleCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */; };
 		5D858ED022C476C400346833 /* SimpleCustomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */; };
 		5D858FC922C60C4A00346833 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */; };
@@ -64,6 +66,8 @@
 		5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo7ViewController.swift; sourceTree = "<group>"; };
 		5D534C642394F009007784A8 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
 		5D534C692394F27C007784A8 /* UITabBar+HahnBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+HahnBadge.swift"; sourceTree = "<group>"; };
+		5D6C791923A33A3100FB5865 /* SlidingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingViewController.swift; sourceTree = "<group>"; };
+		5D6C791D23A33B8C00FB5865 /* Demo8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo8ViewController.swift; sourceTree = "<group>"; };
 		5D858ECD22C473F400346833 /* SimpleCustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		5D858ECF22C476C400346833 /* SimpleCustomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomDemoViewController.swift; sourceTree = "<group>"; };
 		5D858FC822C60C4A00346833 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,14 @@
 			path = "UITabBar+Badge";
 			sourceTree = "<group>";
 		};
+		5D6C791823A33A0B00FB5865 /* SlidingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D6C791923A33A3100FB5865 /* SlidingViewController.swift */,
+			);
+			path = SlidingTabBar;
+			sourceTree = "<group>";
+		};
 		5D858FC722C60C1A00346833 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 				5D18CE6522CB2B5B004A10AF /* TaoBaoCustomTabBar */,
 				5D18CE7022CC8446004A10AF /* AnimationTabBar */,
 				5D18CEC722CFD05B004A10AF /* JDAnimationTabBar */,
+				5D6C791823A33A0B00FB5865 /* SlidingTabBar */,
 				5DCFC34822C108A6005CE98D /* AppDelegate.swift */,
 				5DCFC34A22C108A6005CE98D /* ViewController.swift */,
 				5DCFC34C22C108A6005CE98D /* Main.storyboard */,
@@ -236,6 +249,7 @@
 				5D18CECC22CFD36D004A10AF /* Demo6ViewController.swift */,
 				5D18CECE22CFD37A004A10AF /* Demo7ViewController.swift */,
 				5D534C642394F009007784A8 /* BadgeViewController.swift */,
+				5D6C791D23A33B8C00FB5865 /* Demo8ViewController.swift */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -396,12 +410,14 @@
 				5D18CEC922CFD088004A10AF /* JDAnimationTabBarViewController.swift in Sources */,
 				5DCFC38022C10DF7005CE98D /* Demo4ViewController.swift in Sources */,
 				5D18CECB22CFD113004A10AF /* SuperViewController.swift in Sources */,
+				5D6C791A23A33A3100FB5865 /* SlidingViewController.swift in Sources */,
 				5DCFC37C22C109CF005CE98D /* Demo2ViewController.swift in Sources */,
 				5D18CE6922CB2B5B004A10AF /* TaoBaoCustomTabBar.swift in Sources */,
 				5DCFC37E22C10CB8005CE98D /* Demo3ViewController.swift in Sources */,
 				5DCFC34922C108A6005CE98D /* AppDelegate.swift in Sources */,
 				5D18CE6822CB2B5B004A10AF /* TaoBaoCustomTabBarViewController.swift in Sources */,
 				5D534C6A2394F27C007784A8 /* UITabBar+HahnBadge.swift in Sources */,
+				5D6C791E23A33B8C00FB5865 /* Demo8ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
